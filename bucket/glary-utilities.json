@@ -1,10 +1,10 @@
 {
-    "version": "5.182",
+    "version": "5.181",
     "description": "Powerful and all-in-one utility for cleaning your PC.",
     "homepage": "https://www.glarysoft.com/glary-utilities/",
     "license": "Freeware|Proprietary",
     "url": "https://download.glarysoft.com/guportable.zip",
-    "hash": "1831aadb2880a519a1bf4785629e8ca5ed5d607a3b4901ab37c1052a5396a6a9",
+    "hash": "be27b4366faf387c8ec079cc508c4ec117b99df42510e66a256cdf6d87dfdc6f",
     "bin": [
         [
             "Integrator_Portable.exe",

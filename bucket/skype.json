@@ -1,0 +1,25 @@
+{
+    "version": "8.80.0.195",
+    "description": "Communication tool for free calls and chat.",
+    "homepage": "https://www.skype.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.microsoft.com/en-us/servicesagreement/"
+    },
+    "url": "https://download.skype.com/s4l/download/win/Skype-8.80.0.195.exe",
+    "hash": "711942db14a20323f13699ecbea7a52f922d6e6de34f0d28acc0f5d68803e1ce",
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "Skype.exe",
+            "Skype"
+        ]
+    ],
+    "checkver": {
+        "url": "https://support.skype.com/en/faq/FA12041/what-is-the-latest-version-of-skype-on-each-platform",
+        "regex": "Skype for Windows Desktop version&nbsp;([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://download.skype.com/s4l/download/win/Skype-$version.exe"
+    }
+}

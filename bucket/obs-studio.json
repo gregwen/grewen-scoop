@@ -1,0 +1,51 @@
+{
+    "version": "27.2.1",
+    "description": "Video recording and live streaming software",
+    "homepage": "https://obsproject.com",
+    "license": "GPL-2.0-only",
+    "notes": [
+        "Add Virtual Camera module by running: \"$dir\\data\\obs-plugins\\win-dshow\\virtualcam-install.bat\"",
+        "Remove it by running: \"$dir\\data\\obs-plugins\\win-dshow\\virtualcam-uninstall.bat\""
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.1-Full-x64.zip",
+            "hash": "a87ccb5e82a3678684df461a7a6668d82d00d36d94cc567087639c31cff45d5f",
+            "shortcuts": [
+                [
+                    "bin\\64bit\\obs64.exe",
+                    "OBS Studio"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.1-Full-x86.zip",
+            "hash": "85ee2597c01d793f5849186fac2c8bc03c6384f6e80880456565a2498d6b71cb",
+            "shortcuts": [
+                [
+                    "bin\\32bit\\obs32.exe",
+                    "OBS Studio"
+                ]
+            ]
+        }
+    },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\portable_mode.txt\")) { New-Item \"$dir\\portable_mode.txt\" | Out-Null }",
+    "persist": [
+        "config",
+        "portable_mode.txt"
+    ],
+    "checkver": {
+        "url": "https://obsproject.com/download",
+        "regex": "OBS-Studio-([\\d.]+)-Full-x64\\.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-$version-Full-x64.zip"
+            },
+            "32bit": {
+                "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-$version-Full-x86.zip"
+            }
+        }
+    }
+}
