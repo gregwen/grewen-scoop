@@ -3,7 +3,7 @@
     "description": "Grammarly. Desktop client",
     "homepage": "https://www.grammarly.com/native/windows",
     "license": "Proprietary",
-    "url": "https://download-editor.grammarly.com/windows/GrammarlySetup.exe#/cosi.7z",
+    "url": "https://www.grammarly.com/service/download/direct#/cosi.7z",
     "hash": "578339d5ddedd427c5c61d2be382edd241a65a79692bfc4401a0ec5d16875a4f",
     "installer": {
         "script": [
