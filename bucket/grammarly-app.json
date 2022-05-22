@@ -4,7 +4,7 @@
     "homepage": "https://www.grammarly.com/native/windows",
     "license": "Proprietary",
     "url": "https://download-windows.grammarly.com/new/GrammarlyInstaller.exe#/cosi.7z",
-    "hash": "578339d5ddedd427c5c61d2be382edd241a65a79692bfc4401a0ec5d16875a4f",
+    "hash": "4c59eb28177d0781b2fd84a0325dcd53bec556a088e098047bdb75879c0177d5",
     "installer": {
         "script": [
             "(Get-ChildItem $dir '*-full.nupkg').FullName | Expand-7zipArchive -DestinationPath \"$dir\\app\" -ExtractDir 'lib\\net45' -Removal",
