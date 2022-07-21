@@ -1,5 +1,5 @@
 {
-    "version": "1.41.99",
+    "version": "1.41.100",
     "description": "Brave. Secure, Fast & Private Web Browser with Adblocker",
     "homepage": "https://brave.com",
     "license": {
@@ -10,11 +10,11 @@
     "architecture": {
         "64bit": {
             "url": "https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe#/dl.7z",
-            "hash": "bef04e894dfaa4cb84ce38c8d983c3644bdf3fbc15a7e0574599070733904352"
+            "hash": "494c41dee3df8687fe358fa66c2ac75d3edb70777ac9600299451e94387005a8"
         },
         "32bit": {
             "url": "https://brave-browser-downloads.s3.brave.com/latest/brave_installer-ia32.exe#/dl.7z",
-            "hash": "89164de3a0da34eaf23e489c873e37993e863de12c7f1d0a3b67811c867179b8"
+            "hash": "f55ee20da90a4dc65c7682581d3bcf7a709006b19a827736af46f919179069a9"
         }
     },
     "pre_install": "Expand-7zipArchive \"$dir\\chrome.7z\" -ExtractDir 'Chrome-bin' -Removal",
